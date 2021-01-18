@@ -11,14 +11,15 @@ public class CustomScanner {
         System.out.println("Your second number: " + secondNumber);
 
         int addition = firstNumber + secondNumber;
-        System.out.println("Result addition " + addition);
         int substraction = firstNumber - secondNumber;
-        System.out.println("Result substraction " + substraction);
         int multiplication = firstNumber * secondNumber;
-        System.out.println("Result multiplication " + multiplication);
         int division = firstNumber / secondNumber;
-        System.out.println("Result division " + division);
         int mod = firstNumber%secondNumber;
+
+        System.out.println("Result addition " + addition);
+        System.out.println("Result substraction " + substraction);
+        System.out.println("Result multiplication " + multiplication);
+        System.out.println("Result division " + division);
         System.out.println("Result modulo " + mod);
     }
 }
