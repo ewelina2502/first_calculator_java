@@ -2,7 +2,7 @@ public class Auto {
 
     public String marka;
     public String model;
-    public Integer rokProdukcji;
+    public Integer rokProdukcji; // daj wartość null w int a nie zero
     public int przebieg;
 
     public void jedz() {
