@@ -1,17 +1,21 @@
 public class User {
 
-    public String usename;
+    public String username;
     public String password;
 
-//    public User() {
-//
-//    }
-//
-//    public User(String user, String pass) {
-//        System.out.println("Hello z konstruktora");
-//    }
+    public User() {
+
+    }
+
+    public User(String username, String password) {
+        System.out.println("Hello z konstruktora");
+        this.username = username;
+        this.password = password;
+        // wskazujemy wartość do username i password
+
+    }
 
     public void sayHello() {
-        System.out.println("Hello my name is " + usename);
+        System.out.println("Hello my name is " + username);
     }
 }
