@@ -2,12 +2,19 @@ public class StudentChecker {
 
     public static void main(String[] args) {
 
+        String uczelnia = Student.nazwaUczelni;
+
+
         Student bartek = new Student();
         bartek.imie = "Bartek";
         bartek.nazwisko = "Kowalski";
         bartek.email = "email@email.com";
         bartek.numberIndeksu = 12345;
         bartek.nick = "Bart";
+        String uczelniaBartka = bartek.nazwaUczelni;
+        Student.infoUczelnia();
+        bartek.infoUczelnia();
+
 
         Student zuza = new Student();
         zuza.imie = "Zuzanna";
@@ -15,6 +22,7 @@ public class StudentChecker {
         zuza.email = "email2@email.com";
         zuza.numberIndeksu = 12345;
         zuza.nick = "Zuzka";
+
 
         Student piotr = new Student();
         piotr.imie = "Piotr";
