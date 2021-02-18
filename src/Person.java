@@ -4,6 +4,7 @@ public class Person {
     public int age;
 
     public Person(String name, int age) {
+        System.out.println("Jestem z konstruktorze Person");
         this.name = name;
         this.age = age;
     }
