@@ -16,5 +16,4 @@ public class MathTeacher extends Person {
         System.out.println("Hello my name is " + name);
         System.out.println("I am " + age);
     }
-
 }
