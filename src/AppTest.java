@@ -1,11 +1,13 @@
 public class AppTest {
-    public static void main(String[] args) {
-        AndroidApp aplicationA = new AndroidApp();
-        aplicationA.runAndroidApp();
 
-        IphoneApp aplicationI = new IphoneApp();
-        aplicationI.runIphoneApp();
+    public static void main(String[] args) {
+        AndroidApp android = new AndroidApp("Calculator");
+        android.appInfo();
+        android.runAndroidApp();
+
+        IphoneApp iphoneApp = new IphoneApp("Calculator");
+        iphoneApp.appInfo();
+        iphoneApp.runIphoneApp();
 
     }
-
 }
