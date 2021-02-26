@@ -20,7 +20,5 @@ public class CheckedExceptions {
     public static void readFile(String path) throws FileNotFoundException {
         FileInputStream fileInputStream = new FileInputStream(path);
 
-
-
     }
 }
