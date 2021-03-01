@@ -3,7 +3,7 @@ package drivers;
 public class WebDriverTest {
 
     public static void main(String[] args) {
-        WebDriver driver = getDriver("firefox");
+        WebDriver driver = getDriver("firefoxa");
         driver.get();
         driver.findElementBy();
         driver.findElementBy();
@@ -20,12 +20,19 @@ public class WebDriverTest {
     }
 
     private static WebDriver getDriver(String name) {
-        if(name.equals("chrome")) {
+        if (name.equals("chrome")) {
             return new ChromeDriver();
-        }
-        else if (name.equals("firefox")) {
+        } else if (name.equals("firefox")) {
             return new FirefoxDriver();
+        }
+        try {
+            throw new NoValidBrowserName("No valid browser name. ");
+        } catch (NoValidBrowserName noValidBrowserName) {
+            noValidBrowserName.printStackTrace();
         }
         return null;
     }
 }
+
+
+
