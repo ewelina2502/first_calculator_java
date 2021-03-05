@@ -5,7 +5,7 @@ public class Palindrom {
     //kajak
 
     public static void main(String[] args) {
-        System.out.println(isPallindrom("kajak"));
+        System.out.println(isPallindrom("kaja"));
     }
 
 
